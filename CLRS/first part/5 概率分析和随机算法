@@ -1,0 +1,3 @@
+指示器随机变量I{A}= 0 (if A happen)  
+                 = 1 (if A not happen)  
+一般求取指示器随机变量的期望
