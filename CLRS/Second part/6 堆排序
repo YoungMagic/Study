@@ -3,11 +3,13 @@
 堆是一个近似完全二叉树（该树是完全充满的）  
 二叉堆分为最小堆和最大堆，最大堆指吗某个节点的值最多与父节点一样大。最小堆用于优先队列，最大堆用于堆排序。
 给定下标计算其它节点  
-图  
+
 MAX-HEAPIFY(A，i)（假定i的左右子树已是最大堆），让i下降形成一个最大堆，时间复杂度O(h)  
 建堆：BUILD-MAX-HEAP(A),该算法调用max-heapify。O(n)
 堆排序：仅需常数个额外元素空间，时间复杂度为O(nlgn)（lgn = lg2n)。
-图  
+<p align="center">
+    <img src="https://raw.githubusercontent.com/YoungMagic/Study/master/media/IMG_0158.JPG", width="480", height = "380">
+</p>  
 
 ### 优先队列  
 优先队列用于维护一组元素的结合，其中每个元素具有一个关键字。最大优先队列包含以下操作：  
