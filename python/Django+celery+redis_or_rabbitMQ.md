@@ -146,6 +146,13 @@ while True:
 9. 结果
 celery执行结果
 ![avatar](https://github.com/YoungMagic/Study/blob/master/media/celery.png)
+
+10. 启动多worker
+在装饰器上可以指定任务类型以及走的队列，比如 *@task(base=BaseTask, queue='red')*，该任务走名为red的队列。
+BaseTask重写celery.app.base.Celery.task的参数，可以设置最大重复次数等
+
+启动名为red，队列为red的worker。*python manage.py celery worker -c 6 -l debug -n red -Q red*
+
 - 参考：
 https://blog.csdn.net/bbwangj/article/details/89312355 
 
