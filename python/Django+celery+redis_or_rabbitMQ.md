@@ -21,6 +21,7 @@ Celery 需要一个发送和接受消息的传输者。RabbitMQ 和 Redis 中间
 - 安装：
 pip install -U Celery
 pip install -U django-celery
+![各部分关系](https://i.imgur.com/tcg7Adx.png)
 
 ### 新建Django项目进行测试
 1. 新建项目
