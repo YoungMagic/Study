@@ -129,7 +129,7 @@ python manage.py makemigrations
  
 python manage.py migrate
 ```
-7. 启动celery
+7. 启动celery worker进行消费
 ```
 python manage.py  celery worker -c 6 -l debug  #任务执行进程，worker进程
 ```
