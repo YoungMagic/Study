@@ -9,11 +9,15 @@ rabbitMQ: 3.8.2
 ```
 
 #### 何为任务队列？
-任务队列是一种在线程或机器间分发任务的机制。
-消息队列的输入是工作的一个单元，称为任务，独立的职程（Worker）进程持续监视队列中是否有需要处理的新任务。
-Celery 用消息通信，通常使用中间人（Broker）在客户端和职程间斡旋。这个过程从客户端向队列添加消息开始，之后中间人把消息派送给职程。
-Celery 系统可包含多个职程和中间人，以此获得高可用性和横向扩展能力。
-Celery 需要一个发送和接受消息的传输者。RabbitMQ 和 Redis 中间人的消息传输支持所有特性，但也提供大量其他实验性方案的支持，包括用 SQLite 进行本地开发。
+任务队列是一种在线程或机器间分发任务的机制。 
+
+消息队列的输入是工作的一个单元，称为任务，独立的职程（Worker）进程持续监视队列中是否有需要处理的新任务。 
+
+Celery 用消息通信，通常使用中间人（Broker）在客户端和职程间斡旋。这个过程从客户端向队列添加消息开始，之后中间人把消息派送给职程。 
+
+Celery 系统可包含多个职程和中间人，以此获得高可用性和横向扩展能力。 
+
+Celery 需要一个发送和接受消息的传输者。RabbitMQ 和 Redis 中间人的消息传输支持所有特性，但也提供大量其他实验性方案的支持，包括用 SQLite 进行本地开发。 
 - 安装：
 pip install -U Celery
 pip install -U django-celery
@@ -139,7 +143,9 @@ while True:
     time.sleep(3)
 ```
 9. 结果
+celery执行结果
 ![avatar](https://github.com/YoungMagic/Study/blob/master/media/celery.png)
 - 参考：
-https://blog.csdn.net/bbwangj/article/details/89312355
+https://blog.csdn.net/bbwangj/article/details/89312355 
+
 http://docs.jinkan.org/docs/celery/
