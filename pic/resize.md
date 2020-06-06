@@ -27,16 +27,3 @@ Squoosh是Google开源发布的一款专门用来压缩图片的在线服务，�
 ## 素材管理改造方案
 使用PIL库处理jpeg格式图像，pngquant处理png图像，其他格式暂不处理（其它格式数量少）
 ### 处理流程
-flow
-st=>start:用户上传图片
-op1=>operation:获取该图片，upload_file=request.FILES.get('file', None)
-op2=>operation:PIL读取该图片并判断格式，im=Image.open(upload_file)
-cond=>condition:jpg or png or else
-op3=>operation:直接压缩
-op4=>operation:为该用户在tmp文件夹生成一个临时文件夹，保存该图片在文件夹内
-op5=>operation:压缩
-op6=>operation:返回该文件
-op7=>operation:执行接下来的上传等步骤
-cond(jpg)->op3
-cond(png)->op4
-cond(else)->op7
