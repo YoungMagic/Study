@@ -153,7 +153,9 @@ BaseTask重写celery.app.base.Celery.task的参数，可以设置最大重复次
 
 启动名为red，队列为red的worker。*python manage.py celery worker -c 6 -l debug -n red -Q red*
 
-- 参考：
+- 参考： 
+
 https://blog.csdn.net/bbwangj/article/details/89312355 
 
 http://docs.jinkan.org/docs/celery/
+http://blog.hellsec.net/coding/2019/10/08/celery-timeout-tips/ celery timeout机制
