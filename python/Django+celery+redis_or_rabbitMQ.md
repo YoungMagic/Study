@@ -157,5 +157,7 @@ BaseTask重写celery.app.base.Celery.task的参数，可以设置最大重复次
 
 https://blog.csdn.net/bbwangj/article/details/89312355 
 
-http://docs.jinkan.org/docs/celery/
-http://blog.hellsec.net/coding/2019/10/08/celery-timeout-tips/ celery timeout机制
+http://docs.jinkan.org/docs/celery/ 
+
+http://blog.hellsec.net/coding/2019/10/08/celery-timeout-tips/ celery timeout机制 
+https://docs.celeryproject.org/en/3.1/configuration.html#std:setting-CELERYD_TASK_TIME_LIMIT 文档 
