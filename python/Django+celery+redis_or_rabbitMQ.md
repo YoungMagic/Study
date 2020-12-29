@@ -152,7 +152,7 @@ celery执行结果
 BaseTask重写celery.app.base.Celery.task的参数，可以设置最大重复次数等
 
 启动名为red，队列为red的worker。*python manage.py celery worker -c 6 -l debug -n red -Q red*
-
+`-Q`参数指定了队列名称
 - 参考： 
 
 https://blog.csdn.net/bbwangj/article/details/89312355 
