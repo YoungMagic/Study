@@ -22,6 +22,12 @@ Celery 需要一个发送和接受消息的传输者。RabbitMQ 和 Redis 中间
 pip install -U Celery
 pip install -U django-celery
 ![各部分关系](https://i.imgur.com/tcg7Adx.png)
+#### rabbitMQ
+MQ中，exchange绑定了队列，绑定时需要设置routingkey,发消息时，指定的消息需要通过routingkey传播到指定的exchange.exchange也有几种类型：
+- direct:routingkey必须完全一致
+- topic：routingkey可以进行通配符
+- fanout:发送到所有队列
+- header: 根据header类型
 
 ### 新建Django项目进行测试
 1. 新建项目
