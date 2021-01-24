@@ -28,6 +28,7 @@ MQ中，exchange绑定了队列，绑定时需要设置routingkey,发消息时�
 - topic：routingkey可以进行通配符
 - fanout:发送到所有队列
 - header: 根据header类型
+无论生产者还是消费者，都需要和Broker进行TCP连接，这个就是Connection。一个TCP连接建立起来，客户端就会创建一条信道即Channel。信道是建立在Connection上的虚拟连接。MQ采用NIO的方式进行TCP连接服用，用于减少性能开销和管理
 
 ### 新建Django项目进行测试
 1. 新建项目
